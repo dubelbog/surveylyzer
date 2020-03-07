@@ -15,6 +15,8 @@ import org.apache.catalina.webresources.StandardRoot;
 import org.apache.tomcat.util.scan.Constants;
 import org.apache.tomcat.util.scan.StandardJarScanFilter;
 
+import analyze.PDF_analyzer;
+
 public class Main {
 
     private static File getRootFolder() {
@@ -36,6 +38,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
+//    	PDF_analyzer pa = new PDF_analyzer();
+//    	pa.startTest();
+    	
         File root = getRootFolder();
         System.setProperty("org.apache.catalina.startup.EXIT_ON_INIT_FAILURE", "true");
         Tomcat tomcat = new Tomcat();
